@@ -3,5 +3,5 @@
   "compilerOptions": {
     "types": ["vue"]
   },
-  "include": ["dist/cron-vue.d.ts"]
+  // "include": ["dist/cron-vue.d.ts"]
 }

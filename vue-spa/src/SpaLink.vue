@@ -9,6 +9,7 @@
 
 <script setup lang="ts">
 /**
+ * @module SpaLink
  * Convenience component to create a simple link using the Link type from
  * @saflib/links.
  *
