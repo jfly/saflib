@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@saflib/vitest": "*",
-    "memfs": "^4.17.0"
+    "memfs": "^4.17.0",
+    "typedoc-plugin-vue": "^1.5.0"
   }
 }

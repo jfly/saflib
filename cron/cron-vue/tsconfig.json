@@ -1,0 +1,7 @@
+{
+  "extends": "@saflib/vue-spa/tsconfig.app.json",
+  "compilerOptions": {
+    "types": ["vue"]
+  },
+  "include": ["dist/cron-vue.d.ts"]
+}

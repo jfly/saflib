@@ -28,8 +28,10 @@ program
     const entrypointCommands = Object.values(entrypoints)
       .filter((entrypoint) => !entrypoint.includes("./workflows"))
       .map((entrypoint) => {
-        return `--entryPoints ${entrypoint}`;
+        // return `--entryPoints ${entrypoint}`;
+        return "--entryPoints ./dist/cron-vue.d.ts";
       });
+    console.log("entrypointCommands", entrypointCommands);
 
     console.log("\nGenerating typedoc...");
     const command = [
@@ -40,6 +42,7 @@ program
 
       // for easy reading on GitHub, Vitepress
       "--plugin typedoc-plugin-markdown",
+      "--plugin typedoc-plugin-vue",
 
       // Default is README.md, but these docs are not the entrypoint
       "--entryFileName index",
